@@ -16,9 +16,11 @@
 
 <body>
 
-      <head class="header">
-            <h1 class="header__headline">Дмитрий Пронин, дизайнер</h1>
-      </head>
+      <header class="header">
+            <div class="header__wrapper">
+                  <h1 class="header__title">Дмитрий Пронин, дизайнер</h1>
+            </div>
+      </header>
       <main class="main">
 
             <section class="about-me">
@@ -40,21 +42,22 @@
                               <li class="about-me__features-item">💻 Дизайн кросплатформенных десктоп- и веб- приложений
                               </li>
                               <li class="about-me__features-item">Работаю удаленно, в рабочие дни в рабочее время,
-                                    выхожу на связь, общаюсь с продуктовой
-                                    командой и командой разработки, ежедневные митинги по видео Zoom и в Slack</li>
+                                    выхожу на связь, общаюсь с продуктовой командой и командой разработки, ежедневные
+                                    митинги по видео Zoom и в Slack</li>
 
                         </ul>
                   </div>
             </section>
             <section class="my-works">
                   <div class="my-works__work-one">
-                        <h2 class="work-one__headline">Afro-theme
-                              All messenger in one CRM </h2>
+                        <h2 class="work-one__headline"><span>Afro-theme</span><span>All messenger in one CRM</span></h2>
 
                         <figure class="work-one__figure">
-                              <img class="work-one__figure-img">
-                              <figcaption class="work-one__figure-text">
-                                    <p>Максимальный размер - 1400 пикселей в ширину. VFrMust — personal project has been
+                              <img class="work-one__figure-img" src="img/afro-screen-1.png" alt="Скриншот приложения"
+                                    width="320" height="218">
+                              <figcaption>
+                                    <p class="work-one__figure-text">Максимальный размер - 1400 пикселей в ширину.
+                                          VFrMust — personal project has been
                                           grown into a funded startup with happy users all over the world. The app helps
                                           people to discover great movies, track watched movies and communicate with
                                           friends.
@@ -68,9 +71,11 @@
                         <h2 class="work-two__headline">Statictic</h2>
 
                         <figure class="work-two__figure">
-                              <img class="work-two__figure-img">
-                              <figcaption class="work-two__figure-text">
-                                    <p>Must — personal project has been grown into a funded startup with happy users all
+                              <img class="work-two__figure-img" src="img/settings-dark-frame.png" alt="Статистика"
+                                    width="320" height="218">
+                              <figcaption>
+                                    <p class="work-two__figure-text">Must — personal project has been grown into a
+                                          funded startup with happy users all
                                           over the world. The app helps people to discover great movies, track watched
                                           movies and communicate with friends.
                                           Has been featured numerous times by Apple on the App Store. Available for iOS
@@ -83,9 +88,14 @@
                         <h2 class="work-three__headline">Statictic</h2>
 
                         <figure class="work-three__figure">
-                              <img class="work-three__figure-img">
+                              <div class="work-three__figure-wrapper">
+                                    <img class="work-three__figure-img1" src="img/4.png" alt="" width="320"
+                                          height="300">
+                                    <img class="work-three__figure-img2" src="img/1-2-x.png" alt="" width="320"
+                                          height="325">
+                              </div>
                               <figcaption class="work-three__figure-text">
-                                    <p></p>
+                                    <p class="work-three__figure-text">Отступы от края браузера. Вписывать в ширину.</p>
 
                               </figcaption>
                         </figure>
@@ -95,10 +105,11 @@
       <footer class="footer">
             <section class="contacts">
                   <ul class="contacts__list">
-                        <li class="contacts__item"><a>mail@dpronin.com</a></li>
-                        <li class="contacts__item"><a>Telegram</a></li>
-                        <li class="contacts__item"><a>Blog</a></li>
+                        <li class="contacts__item"><a href="" class="contacts__item-link">mail@dpronin.com</a></li>
+                        <li class="contacts__item"><a href="" class="contacts__item-link">Telegram</a></li>
+                        <li class="contacts__item"><a href="" class="contacts__item-link">Blog</a></li>
                   </ul>
+                  <img class="contacts-img" src="img/bitmap.png" alt="Напиши мне" width="105" height="105">
             </section>
       </footer>
 </body>

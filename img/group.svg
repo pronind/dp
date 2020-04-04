@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="375" height="468" viewBox="0 0 375 468">
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="346" viewBox="0 0 375 346">
     <g fill="none" fill-rule="evenodd">
-        <path fill="#FF451F" d="M90.709 135.491H274.786V319.588H90.709z" transform="rotate(39 159.987 151.143)"/>
-        <g transform="rotate(39 159.987 151.143) translate(246.233 98.112)">
-            <ellipse cx="98.954" cy="183.575" fill="#9A3FFF" rx="98.954" ry="98.715"/>
-            <path fill="#FFFF31" d="M147.492 0L230.447 165.509 64.537 165.509z"/>
+        <path fill="#FF451F" d="M0 281H156V437H0z" transform="translate(-57 -144)"/>
+        <g transform="translate(-57 -144) translate(327 250)">
+            <circle cx="84" cy="156" r="84" fill="#9A3FFF"/>
+            <path fill="#FFFF31" d="M124.5 0L195 141 54 141z"/>
         </g>
-        <path fill="#32AAFF" d="M36.878 36.404L221.085 36.454 221.135 220.697 36.927 220.648z" transform="rotate(39 159.987 151.143) rotate(35 129.006 128.55)"/>
+        <path fill="#32AAFF" d="M208.633 30.633H364.63300000000004V186.633H208.633z" transform="translate(-57 -144) rotate(35 286.633 108.633)"/>
     </g>
 </svg>
