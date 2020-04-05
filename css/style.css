@@ -123,14 +123,20 @@ input[type=radio].visually-hidden {
 }
 
 .work-one__figure {
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
-.work-one__figure-img {
-  min-width: 320px;
+.work-one__figure-img--wrapper {
+  min-width: 280px;
   max-width: 325px;
   height: 218px;
+}
+
+.work-one__figure-img {
+  width: 100%;
+  height: 100%;
 }
 
 .work-one__figure-text {
@@ -157,10 +163,15 @@ input[type=radio].visually-hidden {
   margin: 0;
 }
 
-.work-two__figure-img {
-  min-width: 320px;
+.work-two__figure-img--wrapper {
+  min-width: 280px;
   max-width: 325px;
   height: 218px;
+}
+
+.work-two__figure-img {
+  width: 100%;
+  height: 100%;
 }
 
 .work-two__figure-text {
@@ -192,16 +203,21 @@ input[type=radio].visually-hidden {
   margin: 0;
 }
 
-.work-three__figure-img1 {
-  min-width: 320px;
+.work-three__figure-img1--wrapper {
+  min-width: 280px;
   max-width: 325px;
   height: 300px;
 }
 
-.work-three__figure-img2 {
-  min-width: 320px;
+.work-three__figure-img2--wrapper {
+  min-width: 280px;
   max-width: 325px;
   height: 325px;
+}
+
+.work-three__figure-img {
+  width: 100%;
+  height: 100%;
 }
 
 .work-three__figure-text {
@@ -268,15 +284,15 @@ input[type=radio].visually-hidden {
 
 @media (min-width: 1200px) {
   .header__wrapper {
-    min-width: 1200px;
-    max-width: 1200px;
+    min-width: 1000px;
+    max-width: 1000px;
     min-height: 540px;
     padding: 50px 5px 10px 5px;
     background-image: url(../img/group-3.svg);
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: 375px 470px;
-    background-position: top 50px right 150px;
+    background-position: top 50px right 50px;
   }
 
   .header__title {
@@ -288,8 +304,8 @@ input[type=radio].visually-hidden {
   }
 
   .about-me {
-    min-width: 1200px;
-    max-width: 1200px;
+    min-width: 1000px;
+    max-width: 1000px;
     padding: 0 5px 0 5px;
   }
 
@@ -303,6 +319,11 @@ input[type=radio].visually-hidden {
     color: #FFFFFF;
   }
 
+  .about-me__features {
+    width: 780px;
+    margin-bottom: 100px;
+  }
+
   .about-me__features-headlne {
     padding: 10px 0;
     margin-top: 30px;
@@ -310,6 +331,113 @@ input[type=radio].visually-hidden {
     font-size: 32px;
     font-weight: bold;
     line-height: 1.2;
+  }
+
+  .my-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1200px;
+    max-width: 1400px;
+    padding: 0 5px 0 5px;
+  }
+
+  .my-works__work-one {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-one__headline {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .work-one__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-one__figure-img--wrapper {
+    min-width: 1200px;
+    max-width: 1400px;
+    height: 930px;
+    margin-bottom: 55px;
+  }
+
+  .work-one__figure-text {
+    margin: 0;
+    width: 768px;
+    font-size: 20px;
+  }
+
+  .my-works__work-two {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-two__headline {
+    margin-bottom: 10px;
+  }
+
+  .work-two__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-two__figure-img--wrapper {
+    min-width: 1100px;
+    max-width: 1170px;
+    height: 715px;
+    margin-bottom: 55px;
+  }
+
+  .work-two__figure-text {
+    margin: 0;
+    width: 768px;
+    font-size: 20px;
+  }
+
+  .my-works__work-three {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-three__headline {
+    margin-bottom: 10px;
+  }
+
+  .work-three__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-three__figure-img1--wrapper {
+    min-width: 775px;
+    max-width: 775px;
+    height: 695px;
+    margin-bottom: 10px;
+  }
+
+  .work-three__figure-img2--wrapper {
+    min-width: 755px;
+    max-width: 755px;
+    height: 775px;
+    margin-bottom: 10px;
+  }
+
+  .work-three__figure-text {
+    margin: 0;
+    width: 768px;
+    font-size: 20px;
   }
 }
 
