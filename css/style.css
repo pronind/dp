@@ -35,15 +35,15 @@ input[type=radio].visually-hidden {
 
 .header {
   width: 100%;
-  min-height: 375px;
   box-sizing: border-box;
-  padding: 0 0 30px 0;
+  padding: 0;
   margin: 0;
   background-color: #000000;
 }
 
 .header__wrapper {
   width: 100%;
+  min-height: 375px;
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
@@ -56,7 +56,7 @@ input[type=radio].visually-hidden {
 .header__title {
   margin: 0;
   padding: 60px 30px;
-  box-sizing: border-box;
+  width: 260px;
   color: #FFFFFF;
   font-size: 60px;
   font-weight: 600;
@@ -261,7 +261,7 @@ input[type=radio].visually-hidden {
   }
 
   .header__title {
-    width: 700px;
+    width: 500px;
     box-sizing: border-box;
   }
 
@@ -292,6 +292,7 @@ input[type=radio].visually-hidden {
   }
 
   .header__title {
+    width: 700px;
     margin-top: 50px;
     padding: 0;
     font-size: 72px;
@@ -354,7 +355,6 @@ input[type=radio].visually-hidden {
   }
 
   .work-one__figure-img--wrapper {
-    min-height: 930px;
     margin-bottom: 55px;
   }
 
@@ -399,7 +399,7 @@ input[type=radio].visually-hidden {
   }
 
   .work-two__figure-img--wrapper {
-    min-width: 1100px;
+    min-width: 1000px;
     max-width: 1170px;
     height: 715px;
     margin-bottom: 55px;
@@ -425,14 +425,14 @@ input[type=radio].visually-hidden {
   }
 
   .work-three__figure-img1--wrapper {
-    min-width: 775px;
-    min-height: 695px;
+    width: 775px;
+    height: 695px;
     margin-bottom: 10px;
   }
 
   .work-three__figure-img2--wrapper {
-    min-width: 755px;
-    min-height: 775px;
+    width: 755px;
+    height: 775px;
     margin-bottom: 10px;
   }
 
