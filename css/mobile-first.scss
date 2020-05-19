@@ -1,0 +1,284 @@
+/* Mobile first css */
+$font-family: custom,Inter,
+-apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Helvetica,
+Arial,
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji;
+$color-title: #333;
+$color-font: #333;
+$color-grey100: #000000;
+$color-grey0: #FFFFFF;
+$color-grey10: #d8d8d8;
+$color-blue1: #032cff;
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    color: $color-font;
+    background-color: $color-grey0;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+p {
+    color: $color-font;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+a {
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    background-color: $color-grey100;
+}
+
+.header__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 24px;
+    margin: 0 auto;
+}
+
+.header__title {
+    margin: 0 0 30px 0;
+    color: $color-grey0;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.main {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.about-me {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 36px 24px 16px 24px;
+}
+
+.about-me__text {
+    padding-bottom: 8px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.about-me__features-headlne {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-me__features-list {
+    padding: 0;
+    margin: 0 0 0 16px;
+}
+
+.about-me__features-item {
+    padding: 0 0 16px 0;
+}
+
+.my-works {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px 24px;
+}
+
+.my-works__work-one {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.work-one__headline {
+}
+
+.work-one__figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.work-one__figure-img--wrapper {
+    width: 100%;
+    min-height: 218px;
+}
+
+.work-one__figure-img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-one__figure-text {
+}
+
+.my-works__work-two--wrapper {
+    display: none;
+}
+
+.my-works__work-three {
+    width: 100%;
+}
+
+.work-three__headline {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.work-three__figure-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-three__figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.work-three__figure-img1--wrapper {
+    width: 100%;
+    min-height: 300px;
+}
+
+.work-three__figure-img2--wrapper {
+    width: 100%;
+    min-height: 325px;
+}
+
+.work-three__figure-img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px 24px 135px 24px;
+}
+
+.contacts::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 18px);
+    top: 0;
+    width: 36px;
+    height: 1px;
+}
+
+.contacts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__item {
+    margin-bottom: 8px;
+}
+
+.contacts__item-link {
+    color: $color-blue1;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.contacts__item-link:hover,
+.contacts__item-link:focus,
+.contacts__item-link:active {
+    opacity: 0.7;
+}
+
+.contacts-img {
+    width: 40px;
+    transition: 0.2s;
+}
+
+.contacts-img:hover,
+.contacts-img:focus,
+.contacts-img:active {
+    transform: scale(1.2);
+}
+
+.my-work__header {
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.my-work__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.my-work__figure-img {
+    width: 100%;
+}
+
+.header__blocks {
+    color: #999;
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 6px 4px;
+    border-radius: 50px;
+    border: 1px solid #999;
+}
