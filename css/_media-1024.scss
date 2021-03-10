@@ -1,0 +1,470 @@
+@import 'variables';
+
+/* Desktops */
+@media (min-width: 1024px) {
+    body {
+        line-height: 1.5;
+        font-size: 22px;
+    }
+
+    // *************************************
+    p {
+        color: $color-font;
+        font-size: 22px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .header {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 120px;
+    }
+
+    .header__menu-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 1px;
+        background-color: $color-grey1000;
+        transition: 0.5s;
+    }
+
+    .header__menu-button::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        height: 1px;
+        background-color: $color-grey1000;
+        transition: 0.5s;
+    }
+
+    .modal-open {
+        overflow: hidden;
+    }
+
+    .header__top-menu-wrapper--open {
+        display: block;
+        animation-name: slideDown;
+        animation-timing-function: ease;
+        animation-duration: 0.2s;
+    }
+
+    .header__top-menu--open {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: $color-grey100;
+        padding: 0 25px;
+    }
+
+    .header__logo--white {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+
+        // логотип в меню
+        // background-image: url(../img/logo-d-white.svg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        z-index: 100;
+    }
+
+    .header__menu-button--white {
+        position: relative;
+        width: 30px;
+        height: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .header__menu-button--white::before {
+        background-color: $color-grey0;
+        transform: rotate(-45deg);
+        top: 4px;
+        transition: 0.5s;
+    }
+
+    .header__menu-button--white::after {
+        background-color: $color-grey0;
+        transform: rotate(45deg);
+        bottom: 5px;
+        transition: 0.5s;
+    }
+
+    .header__top-menu {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: $color-grey100;
+        padding: 30px 0 0 0;
+        z-index: 10;
+    }
+
+    .header__top-menu-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .header__top-menu-item {
+        padding: 25px 20px;
+        display: flex;
+        justify-content: flex-start;
+        border-top: 1px solid $color-grey4;
+    }
+
+    .header__top-menu-link {
+        text-decoration: none;
+        font-size: 32px;
+        line-height: 2.08;
+        color: $color-grey0;
+    }
+
+    .main {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 120px;
+        margin: 0 auto;
+    }
+
+    .my-works__work {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 65px;
+    }
+
+    .my-work__figure {
+        width: 100%;
+        box-sizing: border-box;
+
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+        // justify-content: flex-start;
+        margin: 0 0 75px 0;
+        padding: 0;
+    }
+
+    .footer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 80px;
+        margin: 0 auto;
+    }
+
+    .contacts__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .contacts__item-link:hover,
+    .contacts__item-link:focus,
+    .contacts__item-link:active {
+        opacity: 0.7;
+    }
+
+    // ************************************
+    .header__wrapper {
+        display: flex;
+        width: 100%;
+        min-height: 70px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 1500px;
+        padding: 40px 0 20px 0;
+        justify-content: flex-start;
+    }
+
+    .header__logo {
+        align-self: center;
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 77px;
+        margin-right: 35px;
+        background-image: url(../img/dmitry-pronin-logo-arntz-style.svg);
+    }
+
+    .header__top-menu-wrapper {
+        display: none;
+    }
+
+    .header__title {
+        display: block;
+        margin-right: auto;
+        font-family: chingolo-pro, 'Antonio', 'Oswald', sans-serif;
+        font-size: 50px;
+        font-weight: 500;
+
+        // text-transform: uppercase;
+        // Graphik font logo
+        // font-size: 40px;
+        // font-weight: 500;
+        // opacity: 0.2;
+        color: $color-grey100;
+        align-items: center;
+    }
+
+    .header__menu-button {
+        display: none;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 1500px;
+        padding: 0;
+        margin-bottom: 150px;
+    }
+
+    .about-me__title {
+        display: none;
+    }
+
+    .about-me__blocks-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 0 25px 0;
+        max-width: 1200px;
+        display: none;
+    }
+
+    .about-me__blocks {
+        background-color: $top-buttons;
+        padding: 17px 32px 17px 32px;
+        margin-bottom: 21px;
+        line-height: 25px;
+        margin-right: 29px;
+        font-size: 22px;
+        border-radius: 87px;
+        font-weight: 400;
+    }
+
+    .about-me__text {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1px;
+        margin: 0px 0 40px 0;
+        line-height: 1.1;
+
+        // font-size: 80px;
+        font-size: calc(1.525rem + 3.3vw);
+        font-weight: 400;
+        color: $color-grey100;
+    }
+
+    .about-me__features {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 1185px;
+    }
+
+    .about-me__features-list {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 35px 0 0 0;
+        font-size: 22px;
+    }
+
+    // .about-me__features-list::before {
+    // height: 115px;
+    // background-size: 45px 115px;
+    // }
+    .about-me__features-item {
+        position: relative;
+        margin-bottom: 15px;
+        padding: 0 0 0 40px;
+    }
+
+    .about-me__features-item::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0;
+        height: 1px;
+        background-color: $color-font;
+        width: 20px;
+    }
+
+    .my-works {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 1500px;
+        padding: 0;
+    }
+
+    .my-work__header {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 100px 0 16px 0;
+        max-width: 1070px;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .my-work__figure-list {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 35px 0 30px 40px;
+        margin: 0;
+    }
+
+    .my-work__figure-list li {
+        margin-bottom: 20px;
+    }
+
+    .my-work__figure-text {
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 1.5;
+        max-width: 1070px;
+        margin-bottom: 60px;
+    }
+
+    .my-work__figure-img-wrapper {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 90px;
+        justify-content: center;
+    }
+
+    .my-work__wrapper--pink {
+        background-color: $color-pink1;
+        padding: 60px 0;
+    }
+
+    .my-work__wrapper--grey {
+        background-color: $color-grey3;
+        padding: 60px 0;
+    }
+
+    .my-work__wrapper--blue {
+        background-color: $color-blue2;
+        padding: 60px 0;
+    }
+
+    .contacts {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        max-width: 1500px;
+        padding: 0 0 60px 0;
+    }
+
+    /* лисичка внизу
+    .contacts::before {
+        display: block;
+        content: "";
+        width: 100%;
+        left: 0;
+        position: absolute;
+        background-image: url(../img/cat-sleeping.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 65px;
+        bottom: 30px;
+        background-size: 35px 35px;
+    } */
+    .contacts__text {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 1050px;
+        margin-bottom: 45px;
+    }
+
+    .contacts__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 150px 0;
+    }
+
+    .contacts__item {
+        margin-bottom: 60px;
+    }
+
+    .contacts__item-link {
+        color: $color-blue1;
+        transition: 0.2s;
+        text-decoration: none;
+        font-size: 56px;
+    }
+}
+
+.my-work__header2 {
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 0;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    max-width: 1070px;
+}
+
+.my-work__paragraph {
+    max-width: 1050px;
+}
+
+.my-work__list {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 10px 0;
+}
+
+.my-work__list-item {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 0 0 0 40px;
+    max-width: 1050px;
+}
+
+.my-work__list-item::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 1px;
+    background-color: $color-font;
+    width: 20px;
+}
+
+.my-work__paragraph-big {
+    font-size: 56px;
+}

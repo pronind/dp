@@ -1,0 +1,469 @@
+@import 'variables';
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    // *********************************************************************************************************
+    // *********************************************************************************************************
+    p {
+        color: $color-font;
+        font-size: 19px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 70px;
+        box-sizing: border-box;
+        padding: 25px 0 20px 0;
+        margin: 0 auto;
+    }
+
+    .header__logo {
+        width: 64px;
+        height: 77px;
+        align-self: center;
+        background-image: url(../img/dmitry-pronin-logo-arntz-style.svg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .header__title {
+        display: none;
+    }
+
+    .header__menu-button {
+        position: relative;
+        width: 30px;
+        height: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .header__menu-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 1px;
+        background-color: $color-grey1000;
+        transition: 0.5s;
+    }
+
+    .header__menu-button::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        height: 1px;
+        background-color: $color-grey1000;
+        transition: 0.5s;
+    }
+
+    .modal-open {
+        overflow: hidden;
+    }
+
+    .header__top-menu-wrapper {
+        display: none;
+    }
+
+    .header__top-menu-wrapper--open {
+        display: block;
+        animation-name: slideDown;
+        animation-timing-function: ease;
+        animation-duration: 0.2s;
+    }
+
+    .header__top-menu--open {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: $color-grey100;
+        padding: 0 25px;
+    }
+
+    .header__logo--white {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+
+        // логотип для мобильных в меню
+        // background-image: url(../img/logo-d-white.svg);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        z-index: 100;
+    }
+
+    .header__menu-button--white {
+        position: relative;
+        width: 30px;
+        height: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .header__menu-button--white::before {
+        background-color: $color-grey0;
+        transform: rotate(-45deg);
+        top: 4px;
+        transition: 0.5s;
+    }
+
+    .header__menu-button--white::after {
+        background-color: $color-grey0;
+        transform: rotate(45deg);
+        bottom: 5px;
+        transition: 0.5s;
+    }
+
+    .header__top-menu {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: $color-grey100;
+        padding: 30px 0 0 0;
+        z-index: 10;
+    }
+
+    .header__top-menu-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .header__top-menu-item {
+        padding: 25px 20px;
+        display: flex;
+        justify-content: flex-start;
+        border-top: 1px solid $color-grey4;
+    }
+
+    .header__top-menu-link {
+        text-decoration: none;
+        font-size: 26px;
+        line-height: 2.08;
+        color: $color-grey0;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+
+    .about-me__title {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 0 20px 0;
+        color: $color-grey1000;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 1;
+        font-family: chingolo-pro, Antonio, Custom, sans-serif;
+    }
+
+    .about-me__blocks-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 0 25px 0;
+    }
+
+    .about-me__blocks {
+        padding: 8px 18px 4px 18px;
+        line-height: 25px;
+        margin-bottom: 12px;
+        margin-right: 12px;
+        color: $color-grey2;
+        font-size: 14px;
+        border-radius: 23px;
+        background-color: $top-buttons;
+    }
+
+    .about-me__text {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 0 25px 0;
+        font-size: 42px;
+        line-height: 1.3;
+        font-weight: 400;
+        color: $color-grey100;
+    }
+
+    .about-me__features {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-me__features-list {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 25px 0 0 0;
+    }
+
+    // .about-me__features-list::before {
+    // content: "";
+    // width: 100%;
+    // height: 85px;
+    // bottom: 0;
+    // left: 0;
+    // position: absolute;
+    // background-image: url(../img/balancing-scooter.svg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 35px 85px;
+    // }
+    .about-me__features-item {
+        position: relative;
+        padding: 0 0 0 30px;
+        margin-bottom: 15px;
+    }
+
+    .about-me__features-item::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0;
+        width: 17px;
+        height: 1px;
+        background-color: $color-font;
+    }
+
+    .my-works {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .my-work__header {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 0 30px 0;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.14;
+    }
+
+    .my-work__figure-list {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 0 20px 30px;
+        margin: 0;
+    }
+
+    .my-work__figure-list li {
+        margin-bottom: 20px;
+    }
+
+    .my-works__work {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 45px;
+    }
+
+    .my-work__figure {
+        width: 100%;
+        box-sizing: border-box;
+
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+        // justify-content: flex-start;
+        margin: 0 0 55px 0;
+        padding: 0;
+    }
+
+    .my-work__figure-text {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        max-width: 1070px;
+    }
+
+    .my-work__figure-img-wrapper {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .my-work__figure-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .my-work__figure-img--small {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .contacts {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 0 140px 0;
+    }
+
+    .contacts::before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 45px;
+        bottom: 60px;
+        left: 0;
+        position: absolute;
+        background-image: url(../img/cat-sleeping.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 20px 20px;
+    }
+
+    .contacts__text {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        min-height: 190px;
+    }
+
+    .contacts__list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 105px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts__item {
+        margin-bottom: 30px;
+    }
+
+    .contacts__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .contacts__item-link {
+        color: $color-blue1;
+        transition: 0.2s;
+        text-decoration: none;
+    }
+
+    .contacts__item-link:hover,
+    .contacts__item-link:focus,
+    .contacts__item-link:active {
+        opacity: 0.7;
+    }
+
+    // *********************************************************************************************************
+    // *********************************************************************************************************
+    .header {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 20px;
+        padding: 0 60px;
+    }
+
+    .main {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .about-me__blocks {
+        padding: 12px 20px 9px 20px;
+        margin-bottom: 15px;
+        line-height: 25px;
+        margin-right: 15px;
+        font-size: 16px;
+        border-radius: 26px;
+    }
+
+    .my-work__figure-img--small {
+        max-width: 560px;
+        height: auto;
+    }
+
+    .footer {
+        padding: 0 60px;
+    }
+
+    .contacts__text {
+        width: 500px;
+        margin-bottom: 70px;
+    }
+
+    // .about-me__features-list::before {
+    // height: 115px;
+    // background-size: 45px 115px;
+    // }
+    .my-work__list {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 35px 0 0 0;
+    }
+
+    .my-work__list-item {
+        position: relative;
+        margin-bottom: 15px;
+        padding: 0 0 0 40px;
+    }
+
+    .my-work__list-item::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0;
+        height: 1px;
+        background-color: $color-font;
+        width: 20px;
+    }
+
+    .my-work__header2 {
+    }
+}

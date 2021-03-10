@@ -1,0 +1,32 @@
+$font-family: custom,
+-apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Helvetica,
+Arial,
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji;
+$color-title: #333;
+$color-font: #333;
+$color-grey100: #111;
+$color-grey1000: #000000;
+$color-grey0: #FFFFFF;
+$color-grey10: #d8d8d8;
+$color-grey3: #f9f9f9;
+$color-grey2: #505050;
+$color-grey4: #343434;
+$color-blue1: #512eff;
+$color-blue2: #0f1d38;
+$top-buttons: #f2f2f2;
+$color-pink1: #feedf3;
+
+@keyframes slideDown {
+    from {
+        transform: translate(0, -1000px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
