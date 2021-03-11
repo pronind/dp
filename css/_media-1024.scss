@@ -422,9 +422,12 @@
         text-decoration: none;
         font-size: 56px;
     }
+	
+	.my-work__paragraph-big {
+    font-size: 56px;
+		
 }
-
-.my-work__header2 {
+	.my-work__header2 {
     font-weight: 500;
     font-size: 24px;
     padding-bottom: 0;
@@ -464,7 +467,7 @@
     background-color: $color-font;
     width: 20px;
 }
-
-.my-work__paragraph-big {
-    font-size: 56px;
 }
+
+
+
