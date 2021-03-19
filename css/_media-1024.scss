@@ -247,25 +247,27 @@
         justify-content: flex-start;
         margin: 0 0 25px 0;
         max-width: 1200px;
-        display: none;
+        display: flex;
     }
 
     .about-me__blocks {
-        background-color: $top-buttons;
+        /* background-color: $top-buttons; */
+
         padding: 17px 32px 17px 32px;
-        margin-bottom: 21px;
+        margin-bottom: 28px;
         line-height: 25px;
         margin-right: 29px;
         font-size: 22px;
         border-radius: 87px;
         font-weight: 400;
+        border: 2px solid black;
     }
 
     .about-me__text {
         width: 100%;
         box-sizing: border-box;
         padding: 1px;
-        margin: 0px 0 40px 0;
+        margin: 0px 0 80px 0;
         line-height: 1.1;
 
         // font-size: 80px;
@@ -323,7 +325,7 @@
         box-sizing: border-box;
         padding: 0;
         margin: 100px 0 16px 0;
-        max-width: 1070px;
+        max-width: 1170px;
         font-size: 56px;
         font-weight: 400;
         line-height: 1.5;
@@ -422,52 +424,54 @@
         text-decoration: none;
         font-size: 56px;
     }
-	
-	.my-work__paragraph-big {
-    font-size: 56px;
-		
-}
-	.my-work__header2 {
-    font-weight: 500;
-    font-size: 24px;
-    padding-bottom: 0;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    max-width: 1070px;
-}
 
-.my-work__paragraph {
-    max-width: 1050px;
+    .my-work__paragraph-big {
+        font-size: 56px;
+
+    }
+
+    .my-work__header2 {
+        font-weight: 500;
+        font-size: 24px;
+        padding-bottom: 0;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        line-height: 1.5;
+        max-width: 1070px;
+    }
+
+    .my-work__paragraph {
+        max-width: 1050px;
+    }
+
+    .my-work__list {
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 10px 0;
+    }
+
+    .my-work__list-item {
+        position: relative;
+        margin-bottom: 15px;
+        padding: 0 0 0 40px;
+        max-width: 1050px;
+    }
+
+    .my-work__list-item::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0;
+        height: 1px;
+        background-color: $color-font;
+        width: 20px;
+    }
+    .my-work__paragraph-big-link {
+        color: black;
+
+    }
 }
-
-.my-work__list {
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 10px 0;
-}
-
-.my-work__list-item {
-    position: relative;
-    margin-bottom: 15px;
-    padding: 0 0 0 40px;
-    max-width: 1050px;
-}
-
-.my-work__list-item::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 0;
-    height: 1px;
-    background-color: $color-font;
-    width: 20px;
-}
-}
-
-
-
