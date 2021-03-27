@@ -162,7 +162,7 @@
     .footer {
         width: 100%;
         box-sizing: border-box;
-        padding: 0 80px;
+        padding: 50px 80px 20px 80px;
         margin: 0 auto;
     }
 
@@ -179,14 +179,23 @@
     // ************************************
     .header__wrapper {
         display: flex;
+        justify-content: space-between;
         width: 100%;
         min-height: 70px;
         box-sizing: border-box;
         margin: 0 auto;
         max-width: 1500px;
-        padding: 40px 0 20px 0;
+        padding: 40px 0 30px 0;
         justify-content: flex-start;
     }
+
+    .header__top-wrapper {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        order: 2;
+    }
+
 
     .header__logo {
         align-self: center;
@@ -222,6 +231,8 @@
     .header__menu-button {
         display: none;
     }
+
+
 
     .about-me {
         display: flex;
@@ -267,7 +278,7 @@
         width: 100%;
         box-sizing: border-box;
         padding: 1px;
-        margin: 0px 0 80px 0;
+        margin: 0px 0 90px 0;
         line-height: 1.1;
 
         // font-size: 80px;
@@ -289,7 +300,7 @@
         list-style: none;
         padding: 0;
         margin: 35px 0 0 0;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     // .about-me__features-list::before {
@@ -326,7 +337,7 @@
         padding: 0;
         margin: 100px 0 16px 0;
         max-width: 1170px;
-        font-size: 56px;
+        font-size: 60px;
         font-weight: 400;
         line-height: 1.5;
     }
@@ -472,6 +483,81 @@
     }
     .my-work__paragraph-big-link {
         color: black;
+    }
 
+
+
+
+
+
+    .tumbler-small__grey {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 44px;
+        height: 26px;
+        padding: 2px;
+        border-radius: 50px;
+        background-color: #C1C1C4;
+        cursor: pointer;
+    }
+
+    .tumbler-small__grey::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        width: 22px;
+        height: 22px;
+        transition: transform 200ms ease 0s;
+    }
+
+   
+
+
+
+
+
+    .preload::after {
+        content: '';
+        background-image: url(https://tonsky.me/i/flashlight.png);
+    }
+
+    .dark_mode {
+        margin-left: auto;
+        position: relative;
+        width: 44px;
+        height: 26px;
+        border-radius: 50px;
+      
+        transition: 100ms;
+    }
+
+    body.dark {
+        background-color: #000;
+        background-image: url(https://tonsky.me/i/flashlight.png);
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+    }
+
+    body.dark .tumbler-small__grey {
+        background-color: #32D74B;
+        transition: transform 200ms ease 0s;
+    }
+    body.dark .tumbler-small__grey::before {
+        transform: translateX(18px);
+    }
+    @media (hover: hover) {
+        .hoverable.clicked:hover {
+            object-fit: cover;
+            object-position: center top;
+        }
+    
+        .hoverable:hover {
+            object-position: center bottom;
+        }
     }
 }

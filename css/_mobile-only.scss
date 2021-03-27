@@ -1,7 +1,17 @@
 @import 'variables';
 
 @media (max-width: 768px) {
-    p {
+
+	.my-work__paragraph-big-link {
+		color: black;
+	}
+	
+	.my-work__header2 {
+		font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 30px;
+	}
+	p {
         color: $color-font;
         font-size: 18px;
         line-height: 1.5;
@@ -18,12 +28,21 @@
 
     .header__wrapper {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+
+        box-sizing: border-box;
+        padding: 25px 0 20px 0;
+        margin: 0 auto;
+    }
+
+    .header__top-wrapper {
+        display: flex;
         justify-content: space-between;
         width: 100%;
         min-height: 70px;
         box-sizing: border-box;
-        padding: 25px 0 30px 0;
-        margin: 0 auto;
     }
 
     .header__logo {
@@ -37,7 +56,15 @@
     }
 
     .header__title {
-        display: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 0 20px 0;
+        color: $color-grey100;
+        font-weight: 400;
+        line-height: 1;
+        font-family: chingolo-pro, 'Antonio', 'Oswald', sans-serif;
+        font-size: 52px;
     }
 
     .header__menu-button {
@@ -77,6 +104,10 @@
     .header__top-menu-wrapper {
         display: none;
     }
+    .tumbler-hidden {
+        display: none;
+    }
+
 
     .header__top-menu-wrapper--open {
         display: block;
@@ -136,7 +167,7 @@
         flex-direction: column;
         justify-content: flex-start;
         background-color: $color-grey100;
-        padding: 30px 0 0 0;
+        padding: 0 0 0 0;
         z-index: 10;
     }
 
@@ -168,6 +199,12 @@
         color: $color-grey0;
     }
 
+
+
+
+
+
+
     .main {
         width: 100%;
         box-sizing: border-box;
@@ -185,17 +222,17 @@
         margin-bottom: 120px;
     }
 
-    .about-me__title {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0 0 20px 0;
-        color: $color-grey100;
-        font-weight: 400;
-        line-height: 1;
-        font-family: chingolo-pro, 'Antonio', 'Oswald', sans-serif;
-        font-size: 54px;
-    }
+    // .about-me__title {
+    //     width: 100%;
+    //     box-sizing: border-box;
+    //     padding: 0;
+    //     margin: 0 0 20px 0;
+    //     color: $color-grey100;
+    //     font-weight: 400;
+    //     line-height: 1;
+    //     font-family: chingolo-pro, 'Antonio', 'Oswald', sans-serif;
+    //     font-size: 54px;
+    // }
 
     .about-me__blocks-wrapper {
         width: 100%;
@@ -209,19 +246,22 @@
     .about-me__blocks {
         padding: 8px 18px 4px 18px;
         line-height: 25px;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
         margin-right: 12px;
         color: $color-grey2;
-        font-size: 14px;
+		background-color: black;
+		color: white;
+		border: 2px solid black;
+        font-size: 16px;
         border-radius: 23px;
-        background-color: $top-buttons;
+/*         background-color: $top-buttons; */
     }
 
     .about-me__text {
         width: 100%;
         box-sizing: border-box;
         padding: 0;
-        margin: 0 0 25px 0;
+        margin: 0 0 50px 0;
         font-size: 26px;
         line-height: 1.3;
         font-weight: 400;
@@ -281,7 +321,7 @@
     .my-work__header {
         box-sizing: border-box;
         padding: 0;
-        margin: 0 0 5px 0;
+        margin: 0px 0 5px 0;
         font-size: 36px;
         font-weight: 400;
         line-height: 1.3;
@@ -301,7 +341,7 @@
     .my-works__work {
         width: 100%;
         box-sizing: border-box;
-        margin-bottom: 45px;
+        margin-bottom: 75px;
     }
 
     .my-work__figure {
@@ -403,8 +443,90 @@
         margin: 0 0 20px 0;
     }
 	
-	.my-work__paragraph-big {
-    	font-size: 40px;
-	}
 
+    .my-work__paragraph-big {
+        font-size: 40px;
+		
+    }
+
+
+
+
+
+
+    
+
+    .tumbler-small__grey {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 32px;
+        height: 20px;
+        padding: 2px;
+        border-radius: 50px;
+        background-color: #C1C1C4;
+        cursor: pointer;
+    }
+
+    .tumbler-small__grey::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        width: 16px;
+        height: 16px;
+        transition: transform 200ms ease 0s;
+    }
+
+   
+
+
+
+
+
+    .preload::after {
+        content: '';
+        background-image: url(https://tonsky.me/i/flashlight.png);
+    }
+
+    .dark_mode {
+        position: relative;
+        width: 32px;
+        height: 20px;
+        border-radius: 50px;
+      
+        transition: 100ms;
+    }
+
+    body.dark {
+        background-color: #000;
+        background-image: url(https://tonsky.me/i/flashlight.png);
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+    }
+
+    body.dark .tumbler-small__grey {
+        background-color: #32D74B;
+        transition: transform 200ms ease 0s;
+    }
+    body.dark .tumbler-small__grey::before {
+        transform: translateX(12px);
+    }
+    @media (hover: hover) {
+        .hoverable.clicked:hover {
+            object-fit: cover;
+            object-position: center top;
+        }
+    
+        .hoverable:hover {
+            object-position: center bottom;
+        }
+    }
 }
+
+
+
+
