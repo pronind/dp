@@ -60,6 +60,9 @@ input[type="radio"].visually-hidden {
     line-height: 1.5;
     margin: 0;
     padding: 10px 0; }
+  h3 {
+    font-weight: 500;
+    font-size: 24px; }
   .header {
     width: 100%;
     box-sizing: border-box;
@@ -417,6 +420,9 @@ input[type="radio"].visually-hidden {
     line-height: 1.5;
     margin: 0;
     padding: 0; }
+  h3 {
+    font-weight: 500;
+    font-size: 24px; }
   .header__wrapper {
     display: flex;
     flex-direction: column;
@@ -663,7 +669,6 @@ input[type="radio"].visually-hidden {
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px;
-    box-sizing: border-box;
     margin: 0 auto; }
   .contacts {
     width: 100%;
@@ -812,6 +817,9 @@ input[type="radio"].visually-hidden {
     line-height: 1.5;
     margin: 0;
     padding: 10px 0; }
+  h3 {
+    font-weight: 500;
+    font-size: 31px; }
   .header {
     width: 100%;
     box-sizing: border-box;
@@ -983,11 +991,11 @@ input[type="radio"].visually-hidden {
     display: flex; }
   .about-me__blocks {
     /* background-color: $top-buttons; */
-    padding: 17px 32px 17px 32px;
+    padding: 15px 26px 15px 26px;
     margin-bottom: 28px;
     line-height: 25px;
     margin-right: 29px;
-    font-size: 22px;
+    font-size: 28px;
     border-radius: 87px;
     font-weight: 400;
     border: 2px solid black; }
