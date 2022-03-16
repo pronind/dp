@@ -2,27 +2,29 @@
 
 @media (max-width: 768px) {
 
-	.my-work__paragraph-big-link {
-		color: black;
-	}
-	
-	.my-work__header2 {
-		font-weight: 500;
+    .my-work__paragraph-big-link {
+        color: black;
+    }
+
+    .my-work__header2 {
+        font-weight: 500;
         margin-bottom: 0px;
         margin-top: 30px;
-	}
-	p {
+    }
+
+    p {
         color: $color-font;
         font-size: 18px;
         line-height: 1.5;
         margin: 0;
-        padding: 10px 0 ;
+        padding: 10px 0;
     }
 
     h3 {
         font-weight: 500;
-    font-size: 24px;
+        font-size: 24px;
     }
+
     .header {
         width: 100%;
         box-sizing: border-box;
@@ -108,6 +110,7 @@
     .header__top-menu-wrapper {
         display: none;
     }
+
     .tumbler-hidden {
         display: none;
     }
@@ -253,12 +256,12 @@
         margin-bottom: 16px;
         margin-right: 12px;
         color: $color-grey2;
-		background-color: black;
-		color: white;
-		border: 2px solid black;
+        background-color: black;
+        color: white;
+        border: 2px solid black;
         font-size: 16px;
         border-radius: 23px;
-/*         background-color: $top-buttons; */
+        /*         background-color: $top-buttons; */
     }
 
     .about-me__text {
@@ -446,11 +449,11 @@
         padding: 0;
         margin: 0 0 20px 0;
     }
-	
+
 
     .my-work__paragraph-big {
         font-size: 40px;
-		
+
     }
 
 
@@ -458,7 +461,7 @@
 
 
 
-    
+
 
     .tumbler-small__grey {
         position: absolute;
@@ -485,7 +488,7 @@
         transition: transform 200ms ease 0s;
     }
 
-   
+
 
 
 
@@ -501,7 +504,7 @@
         width: 32px;
         height: 20px;
         border-radius: 50px;
-      
+
         transition: 100ms;
     }
 
@@ -516,21 +519,19 @@
         background-color: #32D74B;
         transition: transform 200ms ease 0s;
     }
+
     body.dark .tumbler-small__grey::before {
         transform: translateX(12px);
     }
+
     @media (hover: hover) {
         .hoverable.clicked:hover {
             object-fit: cover;
             object-position: center top;
         }
-    
+
         .hoverable:hover {
             object-position: center bottom;
         }
     }
 }
-
-
-
-

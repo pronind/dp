@@ -1,7 +1,0 @@
-{
-    "editor.fontSize": 23,
-    "liveSassCompile.settings.includeItems": [
-        "css/style.scss"
-        ]
-   
-}
