@@ -200,7 +200,7 @@
     .main {
         width: 100%;
         box-sizing: border-box;
-        padding: 0 40px;
+        padding: 0 40px 0 40px;
         margin: 0 auto;
         max-width: 1620px;
     }
@@ -208,7 +208,7 @@
     .my-works__work {
         width: 100%;
         box-sizing: border-box;
-        margin-bottom: 65px;
+        margin-bottom: 200px;
     }
 
     .my-work__figure {
@@ -226,7 +226,7 @@
     .footer {
         width: 100%;
         box-sizing: border-box;
-        padding: 50px 40px 20px 40px;
+        padding: 0 40px 20px 40px;
         margin: 0 auto;
         max-width: 1620px;
     }
@@ -308,7 +308,8 @@
         margin: 0 auto;
 
         padding: 0;
-        margin-bottom: 150px;
+        margin-top: 40px;
+ margin-bottom: 80px;
     }
 
     .about-me__title {
@@ -400,7 +401,7 @@
     .my-work__header {
         box-sizing: border-box;
         padding: 0;
-        margin: 180px 0 0px 0;
+        margin: 0 0 0px 0;
         padding-top: 50px;
         max-width: 1170px;
         font-size: 48px;
@@ -630,18 +631,9 @@
             object-position: center bottom;
         }
     }
-}
-
-// .block-1-and-2 {
-
-//     display: grid;
-//     grid-template-columns: 2fr 1fr;
-//     grid-template-rows: repeat(2, 1fr);
-//     grid-column-gap: 0px;
-//     grid-row-gap: 0px;
-
-// }
-
+    
+    
+    
 .my-work___text {
     color: rgba(0, 0, 0, 0.6);
 
@@ -684,7 +676,7 @@
 .block-1-and-2___2-1 {
     background-size: cover;
     height: 100%;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 .block-1-and-2___2-2 {
@@ -712,3 +704,24 @@
     grid-gap: 30px;
     margin-top: 70px;
 }
+
+.my-works__contacts {
+    margin-top: -70px;
+     width: 100%;
+        box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+    
+    
+}
+
+// .block-1-and-2 {
+
+//     display: grid;
+//     grid-template-columns: 2fr 1fr;
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+
+// }
