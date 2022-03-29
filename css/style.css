@@ -18,7 +18,7 @@
   }
 }
 body {
-  font-family: custom2, custom, Suisse Intl, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family:  custom2, custom, Suisse Intl, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   /* font-family: IBM Plex Sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Oxygen, Cantarell, sans-serif; */
   margin: 0;
   padding: 0;
@@ -94,7 +94,7 @@ input[type=radio].visually-hidden {
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-    padding: 25px 0 20px 0;
+    padding: 25px 0 0 0;
     margin: 0 auto;
   }
 
@@ -239,7 +239,7 @@ input[type=radio].visually-hidden {
   }
 
   .header__top-menu-item {
-    padding: 25px 0;
+    padding: 10px 0;
     display: flex;
     justify-content: flex-start;
     font-size: 36px;
